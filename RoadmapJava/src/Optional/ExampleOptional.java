@@ -29,5 +29,8 @@ public class ExampleOptional {
 		
 		
 		System.out.println(usuariosBusca);
+
+		List<String> buscarDimitri = usuarios.stream().map(c -> c.getNome().toUpperCase()).filter(c -> c.equalsIgnoreCase("Dimitri")).toList();
+		System.out.println(buscarDimitri);
 	}
 }
